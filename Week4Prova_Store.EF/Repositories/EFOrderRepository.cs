@@ -73,7 +73,7 @@ namespace Week4Prova_Store.EF.Repositories
                 return ctx.Orders.Include(ord=>ord.Customer).ToList();
             }
             catch (Exception)
-            //{
+            {
                 return new List<Order>();
             }
         }
